@@ -2,6 +2,7 @@
   "name": "nextjs-ai-chat",
   "version": "1.0.0",
   "private": true,
+  "homepage": "/ai-chat-assistant-nextjs",
   "scripts": {
     "dev": "next dev -p 5577",
     "build": "next build",
