@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Message from './Message';
+import React, { forwardRef } from "react";
+import Message from "./Message";
 
-const MessageList = ({ messages, isLoading }) => {
+const MessageList = forwardRef(({ messages, isLoading }, ref) => {
   return (
-    <div className="message-list">
+    <div className="message-list" ref={ref}>
       {messages.map((msg) => (
         <Message key={msg.id} message={msg} />
       ))}
@@ -20,6 +20,6 @@ const MessageList = ({ messages, isLoading }) => {
       )}
     </div>
   );
-};
+});
 
 export default MessageList;
